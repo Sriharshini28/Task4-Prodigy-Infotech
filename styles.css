@@ -1,0 +1,329 @@
+body {
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f1ebeb;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header {
+    color: #fff;
+    padding: 15px 0;
+    height: 70px; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-left: 20px;
+}
+
+nav {
+    text-align: right;
+    padding-right: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #4a4747; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #b764b4;
+}
+
+.container {
+    width: 110%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 50px; 
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.intro-image {
+    flex: 1;
+    text-align: center;
+}
+
+.intro-image img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    margin-left: 50px; 
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px; 
+}
+
+.intro-text h2,
+.intro-text p {
+    margin-bottom: 20px;
+}
+
+
+.education {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.education-item {
+    background-color: rgba(244, 247, 248, 0.8); 
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    margin-bottom: 20px;
+    width: calc(33.33% - 20px); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    backdrop-filter: blur(10px); 
+    border-radius: 20px; 
+}
+
+.education-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.education-item h4 {
+    font-size: 1.5rem; 
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.education-item p {
+    margin: 0;
+    text-align: center; 
+}
+
+#about {
+    padding: 100px 20px; 
+}
+
+.about-content h2 {
+    font-size: 1.5rem; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 2rem; 
+    margin-bottom: 15px;
+    color: #333; 
+}
+
+.about-content p, .about-content ul {
+    font-size: 1.2rem; 
+    margin-bottom: 15px;
+}
+
+.about-content ul {
+    padding-left: 20px;
+}
+
+
+#projects {
+    padding: 100px 20px; 
+    background: rgba(255, 255, 255, 0.8) url('image.png') center/cover no-repeat fixed; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px; 
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; 
+}
+
+.project-item {
+    background-color: rgba(234, 243, 243, 0.8); 
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    border-radius: 15px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.project-item:hover {
+    transform: translateY(-15px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    font-size: 1.8rem; 
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    font-size: 1.2rem; 
+    margin: 0;
+}
+
+
+#skills {
+    padding: 100px 20px; 
+    background: rgba(255, 255, 255, 0.8) url('image.png') center/cover no-repeat fixed; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 20px;
+}
+
+#skills h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; 
+}
+
+.skill-item {
+    background-color: rgba(234, 243, 243, 0.8); 
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    border-radius: 15px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.skill-item:hover {
+    transform: translateY(-20px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.skill-item h3 {
+    font-size: 1.8rem; 
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 1.2rem; 
+    margin: 0;
+}
+
+
+#contact {
+    padding: 100px 20px;
+    background: rgba(255, 255, 255, 0.8) url('image.png') center/cover no-repeat fixed; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-top: 20px;
+}
+
+#contact h2 {
+    font-size: 2.5rem; 
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(244, 247, 248, 0.8); 
+    border: 1px solid #ddd; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 25px; 
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.contact-form textarea {
+    height: 150px; 
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a662a5; 
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #694464;
+}
+
+.contact-info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #b764b4; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #9c478c; 
+}
